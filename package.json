@@ -1,6 +1,6 @@
 { 
 	"name": "twitter-ng", 
-	"version": "0.3.1",
+	"version": "0.6.0",
 	"description": "Asynchronous Twitter REST/stream/search client API for node.js.", 
 	"keywords": ["twitter","streaming","oauth"], 
 	"homepage": "https://github.com/Isolus/twitter-ng", 
