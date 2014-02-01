@@ -1,12 +1,12 @@
 Asynchronous Twitter client API for node.js
 ===========================================
 
-[ntwitter](http://github.com/AvianFlu/ntwitter) is an improved version of jdub's [node-twitter](http://github.com/jdub/node-twitter), which in turn was inspired by, and uses some code from, technoweenie's [twitter-node](http://github.com/technoweenie/twitter-node).
+[twitter-ng](http://github.com/Isolus/twitter-ng) is an improved version of AvianFlu's [ntwitter](http://github.com/AvianFlu/ntwitter) which is based on jdub's [node-twitter](http://github.com/jdub/node-twitter), which in turn was inspired by, and uses some code from, technoweenie's [twitter-node](http://github.com/technoweenie/twitter-node).
 
 
 ## Installation
 
-You can install ntwitter and its dependencies with npm: `npm install ntwitter`.
+You can install ntwitter and its dependencies with npm: `npm install twitter-ng`.
 
 
 ## Getting started
@@ -116,7 +116,7 @@ twit.stream('user', {track:'nodejs'}, function(stream) {
 
 ## Contributors
 
-[Lots of people contribute to this project. You should too!](https://github.com/AvianFlu/ntwitter/contributors)
+[Lots of people contribute to this project. You should too!](https://github.com/Isolus/twitter-ng/contributors)
 
 ## TODO
 
