@@ -6,7 +6,7 @@ Asynchronous Twitter client API for node.js
 
 ## Installation
 
-You can install ntwitter and its dependencies with npm: `npm install twitter-ng`.
+You can install twitter-ng and its dependencies with npm: `npm install twitter-ng`.
 
 
 ## Getting started
@@ -31,7 +31,7 @@ Where `callback` is the parent function's callback.  (Or any other function you 
 The keys listed below can be obtained from [dev.twitter.com](http://dev.twitter.com) after [setting up a new App](https://dev.twitter.com/apps/new).
 
 ``` javascript
-var twitter = require('ntwitter');
+var twitter = require('twitter-ng');
 
 var twit = new twitter({
   consumer_key: 'Twitter',
@@ -57,19 +57,11 @@ twit
   .verifyCredentials(function (err, data) {
     console.log(data);
   })
-  .updateStatus('Test tweet from ntwitter/' + twitter.VERSION,
+  .updateStatus('Test tweet from twitter-ng/' + twitter.VERSION,
     function (err, data) {
       console.log(data);
     }
   );
-```
-
-### Search API 
-
-``` javascript
-twit.search('nodejs OR #node', {}, function(err, data) {
-  console.log(data);
-});
 ```
 
 ### Streaming API 
@@ -96,7 +88,7 @@ twit.stream('statuses/filter', {'locations':'-122.75,36.8,-121.75,37.8,-74,40,-7
 });
 ```
 
-ntwitter also supports user and site streams:
+twitter-ng also supports user and site streams:
 
 ``` javascript
 twit.stream('user', {track:'nodejs'}, function(stream) {
@@ -122,4 +114,5 @@ twit.stream('user', {track:'nodejs'}, function(stream) {
 
 - Complete the convenience functions, preferably generated
 - Support [recommended reconnection behaviour](https://dev.twitter.com/docs/streaming-apis/connecting#Best_practices) for the streaming APIs
+- Better support for rate limiting.
 
