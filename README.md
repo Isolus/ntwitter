@@ -9,23 +9,6 @@ Asynchronous Twitter client API for node.js
 You can install twitter-ng and its dependencies with npm: `npm install twitter-ng`.
 
 
-## Getting started
-
-This library is, for the most part, the same API as `node-twitter`. Much of the documentation below is straight from `node-twitter` - credit goes to [jdub](http://github.com/jdub) for putting all this together in the first place. 
-
-The most significant API change involves error handling in callbacks. Callbacks now receive the error as a separate parameter, rather than as part of the data. This is consistent with node's standard library. Callbacks should now look something like this:
-
-``` javascript
-function (err, result) {
-  if (err) return callback(err);
-
-  // Do something with 'result' here
-}
-```
-
-Where `callback` is the parent function's callback.  (Or any other function you want to call on error.)
-
-
 ### Setup API 
 
 The keys listed below can be obtained from [dev.twitter.com](http://dev.twitter.com) after [setting up a new App](https://dev.twitter.com/apps/new).
@@ -46,7 +29,6 @@ var twit = new twitter({
 
 ``` javascript
 app.get('/twitter_signin', restrict, function(req, res, next) {
-  console.log("Called /twitter_signin");
   var twit = new twitter({
     consumer_key: 'KEY',
     consumer_secret: 'SECRET',
