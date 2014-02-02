@@ -27,6 +27,8 @@ var twit = new twitter({
 
 ### Obtaining Access Token
 
+This example assumes that you use [express](http://expressjs.com/).
+
 ``` javascript
 app.get('/twitter_signin', restrict, function(req, res, next) {
   var twit = new twitter({
