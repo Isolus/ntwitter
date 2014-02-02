@@ -42,6 +42,31 @@ var twit = new twitter({
 ```
 
 
+### Obtaining Access Token
+
+``` javascript
+app.get('/twitter_signin', restrict, function(req, res, next) {
+  console.log("Called /twitter_signin");
+  var twit = new twitter({
+    consumer_key: 'KEY',
+    consumer_secret: 'SECRET',
+    oauth_callback: 'https://example.org/twitter_callback'
+  });
+  twit.login()(req, res, next);
+
+});
+app.get('/twitter_callback', restrict, function(req, res){
+  var twit = new twitter({
+    consumer_key: 'KEY',
+    consumer_secret: 'SECRET',
+  });
+  twit.callback()(req, res, function() {
+    console.log("Access Token: " + req.session.oauth_access_token);
+    console.log("Access Token Secret: " + req.session.oauth_access_token_secret);
+  });
+});
+```
+
 ### REST API 
 
 Interaction with other parts of Twitter is accomplished through their RESTful API.
