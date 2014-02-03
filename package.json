@@ -1,25 +1,25 @@
 { 
-	"name": "twitter-ng", 
-	"version": "0.6.1",
-	"description": "Asynchronous Twitter REST/stream/search client API for node.js.", 
-	"keywords": ["twitter","streaming","oauth"], 
-	"homepage": "https://github.com/Isolus/twitter-ng", 
-	"author": "jdub, changes by AvianFlu, Isolus", 
-	"licenses": { 
-		"type": "MIT", 
-		"url": "http://github.com/Isolus/twitter-ng/raw/master/LICENSE"
-	},
-	"repository": { 
-		"type": "git", 
-		"url": "http://github.com/Isolus/twitter-ng.git"
-	}, 
-	"dependencies": { 
-		"oauth": ">=0.9.9"
-	}, 
-	"devDependencies": {
-		"should": "*",
-		"mocha": "*"
-	},
-	"engines": {"node":">=0.4.0"}, 
-	"main": "./lib/twitter"
+  "name": "twitter-ng", 
+  "version": "0.6.2",
+  "description": "Asynchronous Twitter REST/stream/search client API for node.js.", 
+  "keywords": ["twitter","streaming","oauth"], 
+  "homepage": "https://github.com/Isolus/twitter-ng", 
+  "author": "Isolus", 
+  "licenses": { 
+    "type": "MIT", 
+    "url": "http://github.com/Isolus/twitter-ng/raw/master/LICENSE"
+  },
+  "repository": { 
+    "type": "git", 
+    "url": "http://github.com/Isolus/twitter-ng.git"
+  }, 
+  "dependencies": { 
+    "oauth": ">=0.9.9"
+  }, 
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  },
+  "engines": {"node":">=0.4.0"}, 
+  "main": "./lib/twitter"
 }
